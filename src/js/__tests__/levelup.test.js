@@ -20,9 +20,9 @@ test('levelUP class Bowman', () => {
 
 test('levelUP fail', () => {
   
-  const result = new Bowman ('Nikita');
+  const result = new Bowman('Nikita');
   result.health = 0;
-  result.levelUp();
-
-  expect(result).toThrow(Error('Это труп невозможно повысить уровень'))
+  
+  expect(() => result.levelUp()).toThrowError('Это труп невозможно повысить уровень');
+ 
 });
