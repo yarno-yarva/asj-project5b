@@ -17,9 +17,7 @@ test('create class Character', () => {
 
 test('error class Character', () => {
   const name = 'Nikita1234567890';
-  //const newClass = new Character (name);
  
-  //expect(newClass).toThrow(Error('Возможное название от 2-х до 10-ти символов'));
   expect(() => new Character(name)).toThrowError('Возможное название от 2-х до 10-ти символов');
 });
   
